@@ -1,0 +1,756 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    grid-area: header;
+    /* height: 100vh; */
+    /* background-color: yellowgreen; */
+}
+
+.main {
+    grid-area: main;
+    /* height: auto; */
+}
+
+.footer {
+    grid-area: footer;
+    height: auto;
+}
+
+.container {
+    height: auto;
+    display: grid;
+    /* border: 1px solid black; */
+    grid-template-areas: 'header header header'
+        'main main main'
+        'footer footer footer';
+}
+
+/* .container>div {
+    border: 1px solid black;
+} */
+/* navigation css */
+.head {
+    height: 80px;
+    width: 100%;
+    background-color: rgb(208, 50, 75);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#logo {
+    height: 80px;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: end
+}
+
+.nav {
+    height: 80px;
+    width: 75%;
+    /* background-color: purple; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav li {
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    color: antiquewhite;
+    font-family: 'Paytone One', sans-serif;
+    padding: 29px 15px;
+    margin: 0px 0px;
+}
+
+a:hover {
+    background-color: rgb(253, 245, 231);
+    color: rgb(208, 50, 75);
+
+}
+
+.active {
+    background-color: white;
+    color: rgb(208, 50, 75);
+
+}
+
+.pastry {
+    height: 100vh;
+    background-size: 100% 100%;
+    width: 100%;
+    background-image: url(./cake4.jpg);
+    animation-name: cakes;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes cakes {
+    25% {
+        background-image: url(./cake4.jpg);
+    }
+
+    50% {
+        background-image: url(./cake1.jpg);
+    }
+
+    75% {
+        background-image: url(./cake2.jpg);
+    }
+
+    100% {
+        background-image: url(./cake3.jpg);
+    }
+}
+
+
+/* navigation css end */
+
+/* week con css */
+.week {
+    height: 350px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(45, 187, 164);
+    color: #fff;
+    justify-content: space-between;
+}
+
+.text1 {
+    height: 350px;
+    width: 50%;
+    /* background-color: rgb(242, 143, 143); */
+    text-align: center;
+    font-family: 'Paytone One', sans-serif;
+}
+
+.weeksub2 {
+    height: 350px;
+    width: 40%;
+    /* background-color: pink; */
+}
+
+/* week con css end */
+.offer {
+    font-size: 35px;
+}
+
+button {
+    background-color: rgb(208, 50, 75);
+    padding: 20px 25px;
+    /* width: 100%; */
+    font-family: 'Paytone One', sans-serif;
+    font-size: 15px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+}
+
+button:hover {
+    outline: 4px groove rgb(208, 50, 75);
+    background-color: rgb(45, 187, 164);
+    box-shadow: 0px 0px 8px 5px rgb(225, 225, 76);
+}
+
+/* ourservice css */
+.sub1 {
+    /* background-color: rgb(205, 106, 106); */
+    height: 200px;
+    width: 100%;
+}
+
+.ourservice {
+    height: 200px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    color: rgb(34, 34, 34);
+    font-size: 35px;
+    font-family: 'Paytone One', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ourservice css end */
+
+/* sub2 css start */
+.sub2 {
+    /* background-color: red; */
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+.child1 {
+    /* background-color: pink; */
+    height: 450px;
+    width: 30%;
+}
+
+.child2 {
+    /* background-color: rgb(215, 101, 120); */
+    height: 450px;
+    width: 50%;
+    font-size: 25px;
+    margin-top: 50px;
+}
+
+.single {
+    font-family: 'Lilita One', sans-serif;
+    font-family: 'Seymour One', sans-serif;
+    font-family: 'Single Day', cursive;
+    color: grey;
+}
+
+p {
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Lexend', sans-serif;
+    font-size: 15px;
+    margin: auto;
+    /* color: rgb(101, 100, 100); */
+}
+
+.buycake {
+    font-family: 'Paytone One', sans-serif;
+    color: rgb(208, 50, 75);
+    font-size: 30px;
+}
+
+/* sub2 css end */
+
+/* sub3 css start */
+.sub3 {
+    height: 600px;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: 50px;
+    box-sizing: border-box;
+}
+
+.sub3>div {
+    height: 350px;
+    width: 30%;
+    background-color: rgb(253, 245, 231);
+    border-radius: 10%;
+    box-sizing: border-box;
+
+}
+
+.radius {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    margin-top: -50px;
+    margin-left: 120px;
+    border-bottom: 8px solid rgb(45, 187, 164);
+    border-right: 8px solid rgb(45, 187, 164);
+    z-index: 1;
+    position: relative;
+}
+
+.image {
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+.same {
+    text-align: center;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.same:hover {
+    outline: 6px solid rgb(208, 50, 75);
+
+}
+
+.sub3content {
+    font-family: 'Paytone One', sans-serif;
+    color: rgb(50, 50, 50);
+}
+
+.radius:hover {
+    transform: rotate(10deg);
+}
+
+/* sub3 css end */
+/* sub4 css start */
+.sub4 {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(253, 245, 231);
+}
+
+.sub4>div {
+    flex-wrap: wrap;
+    /* display: flex; */
+}
+
+.us {
+    height: 150px;
+    width: 100%;
+    /* background-color: deeppink; */
+    font-family: 'Paytone One', sans-serif;
+    color: rgb(50, 50, 50);
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* child3 css start */
+.child3 {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.subchd1 {
+    height: 400px;
+    width: 60%;
+}
+
+.subchd2 {
+    height: 250px;
+    width: 20%;
+    font-family: 'Paytone One', sans-serif;
+
+    /* background-color: aquamarine; */
+}
+
+.paragrey {
+    color: grey;
+    font-family: sans-serif;
+
+}
+
+.sub4text:hover {
+    color: rgb(45, 187, 164);
+    cursor: pointer;
+}
+
+/* child3 css end */
+
+/* child4 css start */
+.child4 {
+    /* background-color: pink; */
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.chd4 {
+    height: 300px;
+    width: 25%;
+    /* background-color: peachpuff; */
+    text-align: center;
+}
+
+.child4 i {
+    font-size: 80px;
+    color: rgb(208, 50, 75);
+}
+
+.child4 i:hover {
+    /* font-size: 100px; */
+    color: rgb(45, 187, 164);
+}
+
+.chd4text {
+    color: rgb(75, 74, 72);
+    font-family: 'Paytone One', sans-serif;
+}
+
+/* child4 css enddd */
+
+
+/* child5 css start */
+.child5 {
+    height: 500px;
+    width: 100%;
+    /* background-color: palegreen; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.subchd5a {
+    height: 450px;
+    width: 30%;
+    background-color: rgb(45, 187, 164);
+    border-radius: 20px;
+    border-bottom: 5px dashed white;
+    border-top: 5px dashed white;
+    box-sizing: border-box;
+    color: white;
+
+}
+
+.subchd5b {
+    height: 450px;
+    width: 58%;
+    background-color: papayawhip;
+    border-radius: 20px;
+
+}
+
+.heartcake {
+    border-radius: 20px;
+    width: 100%;
+}
+
+
+.feature {
+    font-family: sans-serif;
+    margin: 20px;
+    font-size: 25px;
+}
+
+li {
+    list-style: inside;
+    margin: 10px;
+}
+
+/* child5 css ends */
+
+/* header css ends */
+/* main css start */
+.mainist {
+    height: 550px;
+    width: 100%;
+    background-color: rgb(45, 187, 164);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mainheading {
+    height: 200px;
+    width: 100%;
+    /* background-color: plum; */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.clients {
+    color: white;
+    font-size: 50px;
+    font-family: 'Paytone One', sans-serif;
+}
+
+.child6 {
+    height: 300px;
+    width: 100%;
+    /* background-colr: powderblue; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.subchd6 {
+    height: 300px;
+    width: 40%;
+    /* background-color: red; */
+    display: flex;
+}
+
+.rollpic {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    background-color: white;
+    display: inline-block;
+    display: flex;
+}
+
+.rollimg {
+    border-radius: 50%;
+    margin: 10px 0px 0px 10px;
+    display: inline;
+}
+
+.text {
+    width: 70%;
+    margin-left: 20px;
+    margin-top: 20px;
+    color: whitesmoke;
+    height: 150px;
+    /* background-color: greenyellow; */
+}
+
+.clientname {
+    font-size: 30px;
+    font-family: 'Lilita One', sans-serif;
+    font-family: 'Seymour One', sans-serif;
+    font-family: 'Single Day', cursive;
+}
+
+.column {
+    height: 50px;
+    width: 80px;
+    background-color: green;
+    margin-top: 50px;
+}
+
+/* mainist endd */
+/* main2nd start */
+.main2nd {
+    height: 700px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    /* background-color: red !important; */
+    flex-wrap: wrap;
+}
+
+.child7 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.subchd7 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.child7>div {
+    height: 450px;
+    width: 25%;
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: paleturquoise; */
+    text-align: center;
+}
+
+.sub7 {
+    /* background-color: purple; */
+    height: 170px;
+    width: 80%;
+}
+
+.bar {
+    height: 110px;
+    width: 50px;
+    background-color: rgb(45, 187, 164);
+    margin-top: -115px;
+    /* border-radius: 15px; */
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    z-index: 1;
+    color: antiquewhite;
+    font-size: 20px;
+    position: relative;
+}
+
+.seven {
+    color: rgb(208, 50, 75);
+    font-size: 35px;
+
+}
+
+.seven:hover {
+    color: rgb(45, 187, 164);
+    cursor: pointer;
+}
+
+/* main2nd endd */
+/* main3rd start */
+.main3rd {
+    height: 1200px;
+    width: 100%;
+    background-color: rgb(253, 245, 231);
+}
+
+.menu {
+    background-color: rgb(253, 245, 231);
+}
+
+/* navsub start */
+
+.bgc {
+    background-color: rgb(45, 187, 164);
+}
+
+.navsub {
+    /* background-color: plum; */
+    height: 80px;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.nav2 {
+    margin: 0px 10px;
+    font-family: sans-serif;
+    color: black;
+    /* border-radius: 10px; */
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color: white;
+    padding: 20px 30px;
+}
+
+.nav2:hover {
+    background-color: rgb(45, 187, 164);
+    color: #fff;
+}
+
+.bgc {
+    background-color: rgb(45, 187, 164);
+    color: #fff;
+}
+
+/* navsub endd */
+.content {
+    height: 800px;
+    /* background-color: red !important; */
+    margin: auto;
+    width: 85%;
+    border: 5px solid rgb(45, 187, 164);
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.conimg {
+    height: 450px;
+    width: 35%;
+    background-color: #fff;
+    margin: 60px 0px 0px 80px;
+    transform: rotate(-3deg);
+    box-shadow: 1px 1px 15px 1px rgb(209, 209, 209);
+    font-size: 25px;
+    text-align: center;
+}
+
+.rotate {
+    margin: 20px;
+}
+
+.index {
+    height: 80px;
+    width: 20%;
+    background-color: rgb(208, 50, 75);
+    padding: 0px 10px;
+    border-radius: 10px;
+    position: relative;
+    top: 80px;
+    right: 60px;
+}
+
+.indextext {
+    color: #fff;
+    text-align: center;
+    /* font-family: 'Shadows Into Light', cursive; */
+}
+
+.curve {
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.items1 {
+    height: 650px;
+    width: 35%;
+    /* background-color: palegreen; */
+    margin-top: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    /* margin: auto; */
+    /* margin-right: 10px; */
+}
+
+.items2 {
+    height: 250px;
+    width: 35%;
+    /* background-color: rgb(158, 176, 158); */
+    position: relative;
+    left: 60px;
+    bottom: 250px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item {
+    height: 100px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    /* margin: 20px 10px; */
+    border-radius: 15px;
+
+    box-sizing: border-box;
+}
+
+.item:hover {
+    outline: 1px dotted rgb(179, 177, 177);
+    box-sizing: border-box;
+}
+
+.fancy {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 25px;
+    color: rgb(208, 50, 75);
+    display: flex;
+    display: inline-block;
+}
+
+/* content end */
+
+/* main4th start */
+.main4th {
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(253, 245, 231);
+    align-items: center;
+}
+
+.main4th>div {
+    height: 400px;
+    width: 50%;
+}
+
+.mainsub1 {
+    background-image: url(./cupckae.jpg);
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mainsub2 {
+    background-color: rgb(45, 187, 164);
+    color: white;
+}
+
+/* main4th endd */
+
+/* main css endss */

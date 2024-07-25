@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media</title>
+</head>
+<style>
+    .con {
+        height: 600px;
+        width: 100%;
+        display: grid;
+        grid-template-areas: 'head head head head head head'
+            'left left main main right right'
+            'footer footer footer footer footer footer';
+    }
+
+    @media screen and (min-width: 400px) {
+        .con {
+            grid-template-areas: 'head head head head head head'
+                'left left left left left left'
+                'main main main main main main'
+                'right right right right right right'
+                'footer footer footer footer footer footer';
+        }
+    }
+
+    @media screen and (min-width: 1000px) {
+        .con {
+            grid-template-areas: 'head head head head head head'
+                'left left main main right right'
+                'footer footer footer footer footer footer';
+        }
+    }
+
+    .con>div {
+        border: 1px solid green;
+    }
+
+    .head {
+        grid-area: head;
+    }
+
+    .left {
+        grid-area: left;
+    }
+
+    .main {
+        grid-area: main;
+    }
+
+    .right {
+        grid-area: right;
+    }
+
+    .footer {
+        grid-area: footer;
+    }
+
+    a {
+        text-decoration: none;
+        /* padding: 10px; */
+        height: 50px;
+        width: 10%;
+    }
+
+    .parent {
+        /* border: 2px solid black; */
+        height: 50px;
+        width: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+    }
+.anchor:hover{
+        border: 2px solid;
+    }
+ .parent:hover{
+        border: 2px solid;
+    }
+</style>
+
+<body>
+    <div class="parent">
+        <div class="anchor"><a href="#">call me</a></div>
+    </div>
+    <div class="con">
+        <div class="head"></div>
+        <div class="left"></div>
+        <div class="main"></div>
+        <div class="right"></div>
+        <div class="footer"></div>
+    </div>
+    <!-- <div class="parent"><div><a href="#">call me<a></div></div> -->
+</body>
+
+</html>

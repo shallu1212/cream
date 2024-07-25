@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .service {
+            background-color: gold;
+
+        }
+
+        .service .col {
+            width: 50%;
+        }
+
+        .events {
+            background-color: rgb(35, 222, 222);
+
+        }
+
+        .events .col {
+            width: 30%;
+            margin: auto;
+        }
+
+        .col {
+            height: 300px;
+            border: 2px solid red;
+            box-sizing: border-box
+        }
+
+        /* button */
+
+        .but {
+            position: absolute;
+            width: 150px;
+            height: 30px;
+        }
+
+        .but:hover {
+            position: absolute;
+            /* z-index: -1; */
+            background-color: transparent;
+            /* position: absolute; */
+            border: 2px double green;
+        }
+
+        .btn {
+            width: 150px;
+            background-color: red;
+            font-size: 30px;
+            position: absolute;
+            box-sizing: border-box;
+            border: none;
+        }
+
+        .btn:hover {
+            box-sizing: border-box;
+            /* border: 2px solid greenyellow; */
+        }
+
+        /* button end*/
+        .clearfix {
+            width: 80%;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        @media screen and (max-width:432px) {
+            .service .col {
+                width: 100%;
+            }
+
+            .events .col {
+                width: 80%;
+                margin: auto;
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row service">
+            <div class="col clearfix">
+                <button class="btn">read more</button>
+                <div class="but">
+                </div>
+            </div>
+            <div class="col">2</div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row events">
+            <div class="col">21</div>
+            <div class="col">22</div>
+            <div class="col">23</div>
+        </div>
+    </div>
+</body>
+
+</html>

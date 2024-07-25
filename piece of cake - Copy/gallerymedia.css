@@ -1,0 +1,93 @@
+@media screen and (max-width:932px) {
+
+    /* main5th start */
+    .main5th {
+        height: auto;
+        text-align: center;
+    }
+
+    .gallery {
+        height: auto;
+    }
+
+    .gallery>div {
+        height: auto;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* main5th endd */
+
+    /* main6th start */
+    .main6th {
+        height: auto;
+    }
+
+    .main6th>div {
+        height: 500px;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* main6th endd */
+
+    /* main8 start */
+    .main8 {
+        height: auto;
+    }
+
+    .mainsub8 {
+        height: 1500px;
+    }
+
+    .mainsub8>div {
+        height: 300px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .radius2 {
+        margin-left: 180px;
+    }
+
+    /* main8 endd */
+
+    /* main9 start */
+    .main9 {
+        height: 500px;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* main9 endd */
+    /* main10 start */
+    .main10 {
+        height: auto;
+    }
+
+    .main0a {
+        height: auto;
+        width: 100%;
+        text-align: center;
+    }
+
+    .main0b {
+        display: none;
+    }
+
+    /* main10 endd */
+
+    /* footer start*/
+    .map {
+        display: none;
+    }
+
+    .foot>div {
+        /* height: 500px; */
+        width: 100%;
+        text-align: center;
+    }
+
+    /* footer endd */
+
+}
